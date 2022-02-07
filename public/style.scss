@@ -1,0 +1,182 @@
+@mixin flexCenter($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  @include flexCenter(center, center, row);
+}
+img {
+  width: 200px;
+}
+.authentication {
+  width: 460px;
+  @include flexCenter(center, center, column);
+  .signIn {
+    width: 100%;
+    @include flexCenter(center, center, column);
+    border: 2px solid #1f1f1f;
+    h1 {
+      padding: 0.5rem 1rem;
+    }
+    form {
+      width: 100%;
+      @include flexCenter(center, center, column);
+      .tools {
+        @include flexCenter(center, center, column);
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        // border: 2px solid green;
+        input {
+          width: 80%;
+          font-size: 20px;
+          padding: 0.7rem 0.7rem;
+          border: 2px solid #1f2633;
+          margin: 20px auto;
+          color: #1f2633;
+          &:focus {
+            outline: none;
+          }
+          &:last-child {
+            margin-bottom: 4px;
+          }
+        }
+        label {
+          padding: 0.2rem 0.5rem;
+          font-size: 20px;
+          overflow: hidden;
+          position: absolute;
+          top: 3px;
+          left: 65px;
+          z-index: 1;
+          background-color: white;
+        }
+      }
+      span {
+        width: 85%;
+        // border: 2px solid green;
+        font-size: 20px;
+        text-align: left;
+        margin: 0 auto;
+        color: rgb(65, 65, 173);
+        cursor: pointer;
+      }
+      button {
+        margin: 10px auto;
+        width: 200px;
+        font-size: 25px;
+        padding: 0.8rem 0.8rem;
+        border: none;
+        background-color: #39338b;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: #3931a7;
+        }
+      }
+      .createAccount {
+        width: 100%;
+        @include flexCenter(center, center, row);
+        margin: 15px auto;
+        font-size: 20px;
+      }
+    }
+  }
+}
+.online {
+  width: 100%;
+  @include flexCenter(center, center, row);
+  div {
+    width: 100%;
+    @include flexCenter(center, center, row);
+    img {
+      width: 70px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    h2 {
+      flex-basis: 30%;
+    }
+  }
+}
+.active {
+  display: none;
+}
+
+.signUp {
+  @extend .signIn;
+}
+.between {
+  width: 100%;
+  border: 1px solid rebeccapurple;
+  img {
+    width: 100%;
+  }
+  animation: show 2s linear;
+  @keyframes show {
+    0% {
+      width: 1000px;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+.welcome {
+  width: 100%;
+  border: 2px solid #1f2633;
+  @include flexCenter(center, center, column);
+  padding: 1rem;
+  position: relative;
+  img {
+    width: 140px;
+  }
+  .status {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 112px;
+    right: 208px;
+    padding: 1px;
+    background-color: rgb(10, 194, 10);
+  }
+  .details {
+    @include flexCenter(center, center, column);
+    span {
+      font-size: 20px;
+      padding: 0.3rem 1rem;
+    }
+  }
+  button {
+    margin: 10px auto;
+    width: 200px;
+    font-size: 25px;
+    padding: 0.8rem 0.8rem;
+    border: none;
+    background-color: #39338b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #3931a7;
+    }
+  }
+}
+.error {
+  color: rgb(223, 23, 23);
+}
+.errorForSignIn {
+  color: rgb(223, 23, 23);
+}
+.active {
+  display: none;
+}
+.goSignUpSection {
+  cursor: pointer;
+}

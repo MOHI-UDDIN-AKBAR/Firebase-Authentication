@@ -1,0 +1,219 @@
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+img {
+  width: 200px;
+}
+
+.authentication {
+  width: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.authentication .signIn, .authentication .signUp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #1f1f1f;
+}
+.authentication .signIn h1, .authentication .signUp h1 {
+  padding: 0.5rem 1rem;
+}
+.authentication .signIn form, .authentication .signUp form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.authentication .signIn form .tools, .authentication .signUp form .tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.authentication .signIn form .tools input, .authentication .signUp form .tools input {
+  width: 80%;
+  font-size: 20px;
+  padding: 0.7rem 0.7rem;
+  border: 2px solid #1f2633;
+  margin: 20px auto;
+  color: #1f2633;
+}
+.authentication .signIn form .tools input:focus, .authentication .signUp form .tools input:focus {
+  outline: none;
+}
+.authentication .signIn form .tools input:last-child, .authentication .signUp form .tools input:last-child {
+  margin-bottom: 4px;
+}
+.authentication .signIn form .tools label, .authentication .signUp form .tools label {
+  padding: 0.2rem 0.5rem;
+  font-size: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 3px;
+  left: 65px;
+  z-index: 1;
+  background-color: white;
+}
+.authentication .signIn form span, .authentication .signUp form span {
+  width: 85%;
+  font-size: 20px;
+  text-align: left;
+  margin: 0 auto;
+  color: #4141ad;
+  cursor: pointer;
+}
+.authentication .signIn form button, .authentication .signUp form button {
+  margin: 10px auto;
+  width: 200px;
+  font-size: 25px;
+  padding: 0.8rem 0.8rem;
+  border: none;
+  background-color: #39338b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.authentication .signIn form button:hover, .authentication .signUp form button:hover {
+  background-color: #3931a7;
+}
+.authentication .signIn form .createAccount, .authentication .signUp form .createAccount {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 15px auto;
+  font-size: 20px;
+}
+
+.online {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.online div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.online div img {
+  width: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.online div h2 {
+  flex-basis: 30%;
+}
+
+.active {
+  display: none;
+}
+
+.between {
+  width: 100%;
+  border: 1px solid rebeccapurple;
+  -webkit-animation: show 2s linear;
+          animation: show 2s linear;
+}
+.between img {
+  width: 100%;
+}
+@-webkit-keyframes show {
+  0% {
+    width: 1000px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes show {
+  0% {
+    width: 1000px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.welcome {
+  width: 100%;
+  border: 2px solid #1f2633;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+}
+.welcome img {
+  width: 140px;
+}
+.welcome .status {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50%;
+  top: 112px;
+  right: 208px;
+  padding: 1px;
+  background-color: #0ac20a;
+}
+.welcome .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome .details span {
+  font-size: 20px;
+  padding: 0.3rem 1rem;
+}
+.welcome button {
+  margin: 10px auto;
+  width: 200px;
+  font-size: 25px;
+  padding: 0.8rem 0.8rem;
+  border: none;
+  background-color: #39338b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.welcome button:hover {
+  background-color: #3931a7;
+}
+
+.error {
+  color: #df1717;
+}
+
+.errorForSignIn {
+  color: #df1717;
+}
+
+.active {
+  display: none;
+}
+
+.goSignUpSection {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
