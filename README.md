@@ -29,6 +29,10 @@ if someone already create an account than he or she can login with their email a
 anyone can sign in with their google or facebook account.
 ### Forget password
 if you forget your password than you reset password with simply typing your email
+### User info
+You can see your information after you login.
+<img align="center" alt="GIF" src="![Screenshot (38)](https://user-images.githubusercontent.com/97860664/152817641-379afa81-4ea6-470a-984f-8db2f72eb4e4.png)
+" width="500" height="320" />
 ### sign up
 For creating an account you need Username, Email and Password 
 <img align="center" alt="GIF" src="https://user-images.githubusercontent.com/97860664/152817041-8e8d15a4-5db5-4307-9b87-07895ef5dac2.png" width="500" height="320" />
