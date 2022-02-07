@@ -31,7 +31,7 @@ anyone can sign in with their google or facebook account.
 if you forget your password than you reset password with simply typing your email
 ### User info
 You can see your information after you login.
-<img align="center" alt="GIF" src="![Screenshot (38)](https://user-images.githubusercontent.com/97860664/152817641-379afa81-4ea6-470a-984f-8db2f72eb4e4.png)
+<img align="center" alt="GIF" src="https://user-images.githubusercontent.com/97860664/152817641-379afa81-4ea6-470a-984f-8db2f72eb4e4.png
 " width="500" height="320" />
 ### sign up
 For creating an account you need Username, Email and Password 
